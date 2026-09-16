@@ -1,0 +1,17 @@
+# Copy into .github/workflows/dkim-doctor.yml and edit the domains.
+name: dkim-doctor
+
+on:
+  schedule:
+    - cron: "17 13 * * 1"
+  workflow_dispatch:
+
+jobs:
+  dns-auth:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: node ./dkim-doctor.mjs example.com example.org

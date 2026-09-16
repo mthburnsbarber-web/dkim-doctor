@@ -1,0 +1,27 @@
+# Common DKIM selectors to try with --selectors.
+# Keep only the providers you actually use when auditing a known domain.
+
+default
+mail
+smtp
+dkim
+k1
+k2
+s1
+s2
+selector1
+selector2
+google
+zoho
+pm
+fm1
+fm2
+fm3
+privateemail
+protonmail
+mandrill
+mailjet
+sendgrid
+smtpapi
+amazonses
+mxvault

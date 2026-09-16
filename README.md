@@ -44,6 +44,15 @@ until reply rates crater.
 
 Zero dependencies. Node 18+.
 
+## Free templates
+
+- [DNS sending checklist](docs/dns-record-checklist.md) — SPF, DKIM, and DMARC
+  setup notes for a real sending domain.
+- [Provider selector list](examples/provider-selectors.txt) — common selectors
+  to pass through `--selectors`.
+- [GitHub Action template](examples/github-action.yml) — scheduled weekly DNS
+  auth check.
+
 ## License
 
 MIT
